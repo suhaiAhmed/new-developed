@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+body {
+    font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+    background: url("") no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+}
+
+.service-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.service-description {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: none; /* Light background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-brand img {
+    height: 70px;
+    width: 70px;
+    transition: transform 0.3s ease;
+}
+
+/* Scale logo on hover */
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for Nav Links */
+.nav-link {
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Base styling for the nav links */
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: #333; /* Base color for links */
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
+    border-bottom: 2px solid transparent; /* Invisible underline */
+    position: relative;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Change text color on hover */
+    border-bottom: 2px solid #007bff; /* Visible underline effect */
+}
+
+/* Underline slide-in effect */
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before {
+    visibility: visible;
+    width: 100%; /* Full-width underline on hover */
+}
+
+/* Optional: Active link styling */
+.navbar-nav .nav-link.active {
+    color: #007bff; /* Color for active link */
+    border-bottom: 2px solid #007bff; /* Underline for active link */
+}
+
+.hero-section {
+    text-align: center;
+    padding: 150px 0;
+    background-image: url("./pics/beautiful-mountains-landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section h1 {
+    font-size: 72px;
+    color: #6a0dad;
+    font-weight: bold;
+}
+
+.hero-section h2 {
+    font-size: 36px;
+    color: #000;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.hero-section .btn {
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.hero-section .btn:hover {
+    background-color: #5a0cad;
+}
+
+.about-section {
+    padding: 50px;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #555;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.content h1 {
+    color: #6a1b9a;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.content p {
+    color: #5c5c5c;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.btn-custom {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer a {
+    color: #000;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer p {
+    color: #5c5c5c;
+    font-size: 14px;
+    margin: 10px 0 0;
+}
+
+.footer .brand {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.background-image {
+    background-image: url("./pics/beautiful-mountains-landscape.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+
+.background-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(224, 247, 250, 0.3);
+}
+
+.mission-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.mission-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mission-content {
+    margin-left: 30px;
+}
+
+.mission-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.mission-text {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+.customize-button {
+    margin-top: 20px;
+}
+
+.hero {
+    background: linear-gradient(to right, #e0f7fa, #ffffff); /* Light gradient background */
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #6c23ec;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.text-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-explore {
+    background-color: #6c9e31;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-section {
+    padding: 50px;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.contact-form {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background: #8bc34a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-info .info-item {
+    margin-bottom: 20px;
+}
+
+.contact-info .info-item i {
+    font-size: 24px;
+    color: #8bc34a;
+    margin-right: 10px;
+}
+
+.contact-info .info-item span {
+    display: block;
+    font-size: 14px;
+    color: #888;
+}
+
+.contact-info .info-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info .social-icons a {
+    color: #8bc34a;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Input focus styles */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #6a1b9a;
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(106, 27, 154, 0.5); /* Subtle shadow on focus */
+}
+
+/* Icons hover effect */
+.contact-info .info-item i {
+    transition: color 0.3s;
+}
+
+.contact-info .info-item:hover i {
+    color: #6a1b9a; /* Change icon color on hover */
+}
+.header-standard {
+    margin: 0;
+    padding: 0;
+    position: relative; /* or absolute, depending on your layout */
+    display: flex; /* Adjust as needed */
+    justify-content: space-between; /* or center, etc. */
+    align-items: center; /* Vertical alignment */
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-body {
+    flex-grow: 1;
+  }
+
+  .card {
+    border: none; /* Remove card border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+}
+
+.btn {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.container.my-5 {
+    padding: 40px 15px;
+}
+/* Default header style */
+.navbar {
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Header style when scrolled */
+.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust color and transparency */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slide in from below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Default hidden state for elements */
+.fade-in {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Slightly translate down */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+}
+
+.fade-in.show {
+    opacity: 1; /* Show when triggered */
+    transform: translateY(0); /* Reset translate */
+}
